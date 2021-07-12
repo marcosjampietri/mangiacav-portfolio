@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Transition, animated, config, useSpring } from "react-spring";
 import styled, { css } from "styled-components";
 
-import "../styles/global.css";
+
 import { GlobalStyle } from "../styles/globalSC";
 import { navAction } from "../store/actions/navActions";
 
@@ -48,9 +48,7 @@ function AppChild({ Component, pageProps }) {
             <Modal>{ModComponent}</Modal>
             <Blur />
             <Top />
-
-            {NavOn || ModOn ? <GlobalStyle NavOn /> : <GlobalStyle />}
-
+            <GlobalStyle NavOn={NavOn || ModOn ? true : false} />
             <StyledDiv style={blur}>
                 <Transition
                     items={items}
