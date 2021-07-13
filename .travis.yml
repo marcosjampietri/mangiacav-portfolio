@@ -26,7 +26,7 @@ deploy:
     provider: elasticbeanstalk
     region: eu-west-2
     app: andrea-mangiacavallo
-    env: Devopsmarcos-env
+    env: Andreamangiacavallo-env
     bucket_name: elasticbeanstalk-eu-west-2-344999520177
     bucket_path: andrea-mangiacavallo
     on:

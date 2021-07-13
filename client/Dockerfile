@@ -2,7 +2,7 @@ FROM node:alpine as base
 # Create app directory
 WORKDIR '/app'
 # Install app dependencies
-COPY ./package.json ./
+COPY package*.json ./
 
 RUN npm install --legacy-peer-deps
 # Bundle app source
