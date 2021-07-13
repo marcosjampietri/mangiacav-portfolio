@@ -34,7 +34,3 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
-
-const Main = styled.div`
-    position: relative;
-`;
