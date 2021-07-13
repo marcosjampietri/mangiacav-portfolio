@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Transition, animated, config, useSpring } from "react-spring";
 import styled, { css } from "styled-components";
 
-
+import "../styles/global.css";
 import { GlobalStyle } from "../styles/globalSC";
 import { navAction } from "../store/actions/navActions";
 
@@ -36,20 +36,19 @@ function AppChild({ Component, pageProps }) {
         }
     }, [router.route]);
 
-    const blur = useSpring({
-        position: NavOn || ModOn ? "fixed" : "static",
-        overflowY: NavOn || ModOn ? "hidden" : "scroll",
-    });
+
 
     return (
-        <NextChild>
+        <>
+        <GlobalStyle NavOn={NavOn || ModOn ? true : false}/>
+        <NextChild >
             <NavBar />
             <Menu />
             <Modal>{ModComponent}</Modal>
             <Blur />
             <Top />
-            <GlobalStyle NavOn={NavOn || ModOn ? true : false} />
-            <StyledDiv style={blur}>
+
+            <StyledDiv>
                 <Transition
                     items={items}
                     keys={(item) => item.id}
@@ -92,6 +91,7 @@ function AppChild({ Component, pageProps }) {
                 </Transition>
             </StyledDiv>
         </NextChild>
+        </>
     );
 }
 
