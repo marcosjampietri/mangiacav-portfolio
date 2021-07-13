@@ -35,7 +35,7 @@ const Menu = () => {
         {
             name: "ABOUT",
             color: "hsla(240, 10%, 10%, 0.8)",
-            path: "/career",
+            path: "/about",
         },
     ];
 

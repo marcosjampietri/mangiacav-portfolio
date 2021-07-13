@@ -224,6 +224,7 @@ const Img = styled.div`
 const Back = styled(Face)`
     background: hsla(350, 80%, 50%, 1);
     transform: rotateY(180deg);
+    padding: 20px;
 
     h4 {
         margin: 20px 0px;

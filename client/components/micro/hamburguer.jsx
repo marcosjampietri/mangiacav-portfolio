@@ -44,8 +44,8 @@ const Burger = () => {
     });
     const bg = useSpring({
         backgroundColor: NavOn
-            ? "hsla(350, 0%, 20%, 0.7)"
-            : "hsla(350, 0%, 20%, 0.2)",
+            ? "hsla(350, 0%, 90%, 0.7)"
+            : "hsla(350, 0%, 90%, 0.05)",
     });
 
     return (

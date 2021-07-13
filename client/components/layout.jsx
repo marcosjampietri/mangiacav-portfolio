@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>MARCOS JAMPIETRI'S APP</title>
+                <title>ANDREA MANGIACAVALLO'S PORTFOLIO</title>
                 <meta
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"

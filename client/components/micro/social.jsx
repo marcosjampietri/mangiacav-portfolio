@@ -8,22 +8,22 @@ const Social = () => {
         {
             name: "@andrea_mangiacavallo",
             icon: "facebook.svg",
-            url: "https://github.com/marcosjampietri/resume",
+            url: "https://github.com/marcosjampietri/",
         },
         {
             name: "@andrea_mangiacavallo",
             icon: "youtube.svg",
-            url: "https://github.com/marcosjampietri/resume",
+            url: "https://github.com/marcosjampietri/",
         },
         {
             name: "@andrea_mangiacavallo",
             icon: "instagram.svg",
-            url: "https://github.com/marcosjampietri/resume",
+            url: "https://github.com/marcosjampietri/",
         },
         {
             name: "@andrea_mangiacavallo",
             icon: "twitter.svg",
-            url: "https://github.com/marcosjampietri/resume",
+            url: "https://github.com/marcosjampietri/",
         },
     ];
 
