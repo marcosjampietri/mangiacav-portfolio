@@ -28,7 +28,7 @@ services:
         environment:
             - MONGO_INITDB_ROOT_USERNAME=${DATABASE_USERNAME}
             - MONGO_INITDB_ROOT_PASSWORD=${DATABASE_PASSWORD}
-    client:
+    nextjs:
         build:
             dockerfile: Dockerfile.dev
             context: ./client
