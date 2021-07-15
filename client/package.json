@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "next dev",
-        "build": "rimraf .next && next build",
+        "build": "rm -r ./.next/* && next build",
         "start": "next start",
         "test": "jest",
         "lint": "next lint"
